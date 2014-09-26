@@ -14,6 +14,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: #99CCFF
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -26,7 +27,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ffffff;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -51,7 +52,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #99CCFF;
 
   .btn {
     font-size: 21px;

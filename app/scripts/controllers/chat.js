@@ -24,6 +24,15 @@ angular.module('drinksenderApp')
       }
     };
 
+    $scope.deleteMessage = function(msg) {
+      if( msg ) {
+        // push a message to the end of the array
+        $scope.messages.$remove({text: msg})
+          // display any errors
+          .catch(alert);
+      }
+    };
+
     function alert(msg) {
       $scope.err = msg;
       $timeout(function() {
