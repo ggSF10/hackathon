@@ -22,17 +22,22 @@
     <!-- Add your site or application content here -->
     <div class="container">
       <div class="header">
-      <nav class="navbar navbar" role="navigation">
-      <li class="active"><a ng-href="#">Account</a></li>
-          <!-- //angularfire -->
-          <li><a ng-href="#/chat">Friends</a></li>
-          <li>
-            <a ng-hide-auth="" href="#/login">Log In</a>
-            <a ng-show-auth="" href="#/account">Account</a>
-          </li>
-          </ul>
-</nav>
-        </div>
+      <nav class="navbar navbar-default navbar-fixed-top navbar right" role="navigation">
+      <span class="span4 offset2"></span>
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">Account
+       <span class="caret"></span>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit Account Information</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Drinks Sent History</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Drinks Received History</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Invite Your Friends</a></li>
+        </ul>
+      </button>
+      <button type=".navbar-btn button" class="btn btn-default navbar-btn">Friends</button>
+      <button type=".navbar-btn button" class="btn btn-default navbar-btn">Bars</button>
+      <button type=".navbar-btn button" class="btn btn-default navbar-btn">Log In</button>
+      </nav>
+    </div>
     
       <div class="container">
         <div ng-view="" class="col-md-12 col-sm-12">          
